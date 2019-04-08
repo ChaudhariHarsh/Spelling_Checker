@@ -150,7 +150,7 @@ def edits2(word):
     "All edits that are two edits away from `word`."
     return (e2 for e1 in edits1(word) for e2 in edits1(e1))
 ```
-## Win32com - Word Application : 
+## [Win32com - Word Application](http://blog.macuyiko.com/post/2017/word-spellchecking-in-python.html) : 
 
 > pip install pywin32
 
@@ -194,9 +194,9 @@ import hunspell
 hobj = hunspell.HunSpell('/usr/share/hunspell/en_US.dic', '/usr/share/hunspell/en_US.aff')
 hobj.spell('spookie')
 ```
-## Ispell : 
+## [Ispell](http://code.activestate.com/recipes/117221-spell-checking/) : 
 
-> pip install m3-aspell-python
+> Its Code
 
 ```
 Code Here
