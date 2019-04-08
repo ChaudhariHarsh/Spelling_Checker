@@ -199,14 +199,14 @@ hobj.spell('spookie')
 > Its Code
 
 ```
-Code Here
+Not yet tested
 ```
 ## [Aspell](http://aspell.net/) : 
 
 > pip install aspell-python-py3
 
 ```
-Code Here
+Not yet tested
 ```
 
 ## [Pyenchant](https://github.com/rfk/pyenchant) : 
@@ -214,14 +214,14 @@ Code Here
 > pip install pyenchant
 
 ```
-Code Here
+Not yet tested
 ```
 ## [Scspell](https://github.com/myint/scspell) : 
 
 > pip install scspell3k
 
 ```
-Code Here
+Not yet tested
 ```
 ## [Gensim](https://radimrehurek.com/gensim/install.html) : 
 
