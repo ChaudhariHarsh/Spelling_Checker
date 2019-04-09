@@ -7,7 +7,7 @@
 
 > pip install gingerit
 
-```
+```python
 from gingerit.gingerit import GingerIt
 
 text = 'The smelt of fliwers bring back memories.'
@@ -20,7 +20,7 @@ parser.parse(text)
 
 > pip install autocorrect
 
-```
+```python
 from autocorrect import spell
 spell('HTe')
 ```
@@ -29,7 +29,7 @@ spell('HTe')
 
 > pip install pyspellchecker
 
-```
+```python
 from spellchecker import SpellChecker
 
 spell = SpellChecker()
@@ -44,9 +44,11 @@ for word in misspelled:
 
 ## [Pattern](https://www.clips.uantwerpen.be/pages/pattern-en) : 
 
++ For only Python 3.6 and above
+
 > pip install pattern
 
-```
+```python
 from pattern.web import Twitter
 from pattern.en import tag
 from pattern.vector import KNN, count
@@ -69,9 +71,11 @@ print(knn.classify('stupid autocorrect'))
 
 ## [Symspell](https://github.com/mammothb/symspellpy) : 
 
++ For only Python 3.6 and above
+
 > pip install -U symspellpy
 
-```
+```python
 import os
 
 from symspellpy.symspellpy import SymSpell  # import the module
@@ -97,9 +101,11 @@ if __name__ == "__main__":
 
 ## [Sympound](https://pypi.org/project/sympound/) : 
 
++ For only Python 3.6 and above
+
 > pip install sympound
 
-```
+```python
 from gingerit.gingerit import GingerIt
 
 text = 'The smelt of fliwers bring back memories.'
@@ -112,7 +118,7 @@ parser.parse(text)
 
 > Its just code.
 
-```
+```python
 import re
 from collections import Counter
 
@@ -154,7 +160,7 @@ def edits2(word):
 
 > pip install pywin32
 
-```
+```python
 http://blog.macuyiko.com/post/2017/word-spellchecking-in-python.html : Works while Word is open
 import win32com.client
 
@@ -185,11 +191,16 @@ print(corrections['grammar'][0]['suggestions'][0])
 wordDoc.Close()
 word.Quit()
 ```
-## [Hunspell](https://github.com/blatinier/pyhunspell) : 
+## [Hunspell](https://github.com/blatinier/pyhunspell) :
 
-> pip install hunspell
++ Linux only
++ have to install hunspell
 
-```
+> sudo apt-get install hunspell hunspell-en-us
+
+> pip install --user hunspell
+
+```python
 import hunspell
 hobj = hunspell.HunSpell('/usr/share/hunspell/en_US.dic', '/usr/share/hunspell/en_US.aff')
 hobj.spell('spookie')
@@ -203,7 +214,11 @@ Not yet tested
 ```
 ## [Aspell](http://aspell.net/) : 
 
-> pip install aspell-python-py3
++ Linux only
++ have to install aspell
+
+> sudo apt-get install aspell aspell-en
+> pip install --user aspell-python-py3
 
 ```
 Not yet tested
@@ -211,7 +226,11 @@ Not yet tested
 
 ## [Pyenchant](https://github.com/rfk/pyenchant) : 
 
-> pip install pyenchant
++ Linux only
++ have to install enchant
+
+> sudo apt-get install enchant
+> pip install --user pyenchant
 
 ```
 Not yet tested
@@ -225,9 +244,9 @@ Not yet tested
 ```
 ## [Gensim](https://radimrehurek.com/gensim/install.html) : 
 
-> pip install --upgrade gensim
+> pip install --upgrade --user gensim
 
-```
+```python
 from gensim import models, similarities
 
 tfidf = models.TfidfModel(corpus)
